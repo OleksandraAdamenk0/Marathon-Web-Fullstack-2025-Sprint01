@@ -1,0 +1,7 @@
+body {
+    padding: 64px;
+}
+
+img:hover {
+    rotate: -30deg;
+}

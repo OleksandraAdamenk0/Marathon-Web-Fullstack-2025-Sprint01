@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>Settings</h1>
+<div class="container">
+
+  <input type="radio" id="ui" name="settings" checked>
+  <input type="radio" id="personal" name="settings">
+  <input type="radio" id="chat" name="settings">
+  <input type="radio" id="system" name="settings">
+
+  <div class="content">
+
+    <form class="section ui">
+      <fieldset class="vertical">
+        <label for="font-select">Typeface</label>
+        <select id="font-select">
+          <option value="0">Acunim Pro</option>
+          <option value="1">Comic Sans</option>
+          <option value="2">Times New Roman</option>
+        </select>
+      </fieldset>
+
+      <fieldset  class="vertical">
+        <label>Weight</label>
+        <div class="weight">
+          <input type="checkbox" id="regular" name="weight" class="weight-option">
+          <label for="regular">Regular</label>
+          <input type="checkbox" id="bold" name="weight" class="weight-option" checked>
+          <label for="bold">Bold</label><br>
+        </div>
+
+      </fieldset>
+
+      <fieldset  class="vertical">
+        <label for="font-size">Size</label>
+        <input type="range" id="font-size" min="10" max="36" step="1" class="range-slider">
+        <div>
+          <p class="small">A</p>
+          <p class="big">A</p>
+        </div>
+      </fieldset>
+
+      <fieldset  class="horizontal">
+        <label>Dark UI</label>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </fieldset>
+
+      <fieldset  class="vertical">
+        <label>Color</label>
+        <div class="colors">
+          <input type="checkbox" id="blue">
+          <label for="blue"></label>
+          <input type="checkbox" id="green">
+          <label for="green"></label>
+          <input type="checkbox" id="pink">
+          <label for="pink"></label>
+          <input type="checkbox" id="yellow">
+          <label for="yellow"></label>
+          <input type="checkbox" id="orange" checked>
+          <label for="orange"></label>
+        </div>
+      </fieldset>
+    </form>
+
+<!--    Instructions for coding the following sections have not been provided-->
+    <form class="section personal"></form>
+    <form class="section chat"></form>
+    <form class="section system"></form>
+
+  </div>
+
+  <nav>
+      <label for="ui">
+        <img src="assets/images/artistic-brush.png" alt="UI Settings">
+      </label>
+
+      <label for="personal">
+        <img src="assets/images/user-icon.png" alt="Personal Settings">
+      </label>
+
+      <label for="chat">
+        <img src="assets/images/sms-speech-bubble.png" alt="Personal Settings">
+      </label>
+
+      <label for="system">
+        <img src="assets/images/computer-screen.png" alt="System Settings">
+      </label>
+  </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+/* First level items (main menu) */
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+    background-color: #4CAF50;
+}
+
+.menu-item:hover > a {
+    background-color: #45a049;
+}
+
+/* Second level (dropdown) */
+.menu-item > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #333;
+    width: 200px;
+    padding: 0;
+}
+
+.menu-item:hover > ul {
+    display: block;
+}
+
+.menu-item > ul > li > a {
+    background-color: #4CAF50;
+}
+
+.menu-item > ul > li > a:hover {
+    background-color: #45a049;
+}
+
+/* Third level items */
+.submenu-item > ul {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: #333;
+    width: 200px;
+}
+
+.submenu-item:hover > ul {
+    display: block;
+}
+
+.submenu-item > ul > li > a {
+    background-color: #ff9800;
+}
+
+.submenu-item > ul > li > a:hover {
+    background-color: #e68900;
+}

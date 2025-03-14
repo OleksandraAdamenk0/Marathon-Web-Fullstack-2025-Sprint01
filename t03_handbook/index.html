@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Handbook</h1>
+  <h2>Html</h2>
+  <section class="html">
+    <article>
+      <h3>h1</h3>
+      <p>The h1 to h6 tags are used to define HTML headings</p>
+      <pre>&lt;h1&gt;Title&lt;/h1&gt;</pre>
+      <h1 class="example">Title</h1>
+    </article>
+    <article>
+      <h3>table</h3>
+      <p>defines an HTML table</p>
+      <pre>&lt;table&gt;&lt;/table&gt;</pre>
+      <table class="example">
+        <tr>
+          <th>Country</th>
+          <th>Country</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </table>
+    </article>
+    <article>
+      <h3>hr</h3>
+      <p>draws a horizontal line</p>
+      <pre>&lt;hr&gt;</pre>
+      <hr class="example">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diem nonummy nibh</p>
+      <hr class="example">
+    </article>
+    <article>
+      <h3>input</h3>
+      <p>Designed to create text fields, various buttons, radio buttons and checkboxes</p>
+      <pre>&lt;input attributes&gt;</pre>
+      <form class="example">
+        <fieldset>
+          <label for="name">Your name</label>
+          <br>
+          <input id="name" type="text">
+          <p>Question</p>
+          <label><input id="answer1" type="radio" name="question">answer</label><br>
+          <label><input id="answer2" type="radio" name="question">answer</label><br>
+          <label><input id="answer3" type="radio" name="question">answer</label><br>
+        </fieldset>
+      </form>
+    </article>
+    <article>
+      <h3>button</h3>
+      <p>Clickable button</p>
+      <pre>&lt;button&gt;Button&lt;/button&gt;</pre>
+      <button class="example">Button</button>
+    </article>
+  </section>
+  <h2>Css</h2>
+  <section class="css">
+    <article>
+      <h3>background</h3>
+      <p>specifies the background of an element</p>
+      <pre>background: [];</pre>
+      <div class="background">Text</div>
+    </article>
+
+    <article>
+      <h3>opacity</h3>
+      <p>specifies the opacity/transparency of an element</p>
+      <pre>opacity: 0.8;</pre>
+      <div class="opacity">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </article>
+    <article>
+      <h3>line-height</h3>
+      <p>specifies the height of a line</p>
+      <pre>line-height: 1.5;</pre>
+      <p class="line-height">Lorem ipsum dolor</p>
+      <p class="line-height">Lorem ipsum dolor</p>
+    </article>
+    <article>
+      <h3>text-transform</h3>
+      <p>controls the capitalization of text</p>
+      <pre>text-transform: uppercase;</pre>
+      <p class="text-transform">
+        <span class="upper">Lorem</span>  ipsum dolor sit <span class="upper">amet, consectetur</span>
+        <span class="lower">adipisicing elit.</span> <span class="upper">vitae, dolore.</span>
+      </p>
+    </article>
+    <article>
+      <h3>border</h3>
+      <p>specifies the style of the outline</p>
+      <pre>border-bottom: 2px solid #666;</pre>
+      <div class="border"></div>
+    </article>
+    <article>
+      <h3>font-size</h3>
+      <p>specifies the font size of the item.<br>%, px, rem, inherit</p>
+      <pre>font-size: 24px;</pre>
+      <p class="font-size">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse.</p>
+    </article>
+  </section>
+  <h2>Protocols</h2>
+  <section class="protocols">
+    <article>
+      <h3>HTTP methods</h3>
+      <p>
+        GET use this type of requests to retrieve resource representation/information only - and not to modify it in any way
+        <br><br>
+        POST used to create a new resource into the collection of resources
+        <br><br>
+        PUT use it primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not)
+        <br><br>
+        DELETE used to delete resources (identified by the Request-URI)
+        <br><br>
+        PATCH - HTTP PATCH requests are to make partial update on a resource
+      </p>
+    </article>
+    <article>
+      <h3>HTTP status code</h3>
+      <p><br>1xx: Informational<br>
+        example: 100 Continue
+        <br><br>
+        2xx: Success<br>
+        example: 201 Created
+        <br><br>
+        3xx: Redirection<br>
+        example: 301 Moved Permanently
+        <br><br>
+        4xx: Client Error<br>
+        example: 404 Not Found
+        <br><br>
+        5xx: Server Error<br>
+        example: 500 Internal Server Error
+      </p>
+    </article>
+    <article>
+      <h3>DNS list by types</h3>
+      <p>
+        A- (address record) - specifies IP address (IPv4) for given host. A records are
+        used for conversion of domain names to corresponding IP addresses
+        <br><br>
+        AAAA (IPv6 address record) specifies IPv6 address for given host. So it works the same way
+        as the A record and the difference is the type of IP address
+        <br><br>
+        CNAME (canonical name record) - specifies a domain name that has to be queried in order to resolve
+        the original DNS query. Therefore CNAME records are used for creating aliases of domain names.
+        CNAME records are truly useful when we want to alias our domain to an external domain.
+        In other cases we can remove CNAME records
+        and replace them with A records and even decrease performance overhead
+        <br><br>
+        HINFO (Host Information records) - used to acquire general information about a host.
+        The record specifies type of CPU and OS. The HINFO record data provides the possibility to use operating system
+        specific protocols when two hosts want to communicate. For security reasons
+        the HINFO records are not typically used on public servers
+        <br><br>
+        ISDN (Integrated Services Digital Network records) - specifies ISDN address for a host.
+        An ISDN address is a telephone number that consists of a country code, a national destination code,
+        a ISDN Subscriber number and, optionally, a ISDN subaddress. The function of the record is only variation
+        of the A resource record function
+        <br>
+        MX (Mail exchanger record) specifies a mail exchange server for a DNS domain name.
+        The information is used by Simple Mail Transfer Protocol (SMTP) to route emails to proper
+        hosts. Typically, there are more than one mail exchange server for a DNS domain and each
+        of them have set priority
+        <br><br>
+        NS (name server) specifies an authoritative name server for given host
+        <br><br>
+        PTR (Reverse-lookup Pointer records) - As opposed to forward DNS resolution (A and AAAA DNS records),
+        the PTR record is used to look up domain names based on an IP address
+        <br><br>
+        SOA (Start of Authority records) - The record specifies core information about a DNS zone,
+        including the primary name server, the email of the domain administrator, the domain serial number,
+        and several timers relating to refreshing the zone
+        <br><br>
+        TXT (Text records) - The text record can hold arbitrary non-formatted text string.
+        Typically, the record is used by Sender Policy Framework (SPF) to prevent fake emails to appear
+        to be sent by you
+      </p>
+    </article>
+    <article>
+      <h3>Identifying google's IP</h3>
+      <p>
+        <br>To identify google.com IP, follow the next steps:
+        <br><br>
+        1. open Terminal
+        <br><br>
+        2. paste and run the command nslookup google.com
+        <br><br>
+        As result, you will receive "name" and "address": <br>
+        Name: google.com.ua <br>
+        Address: 216.58.215.99 <br>
+        Repeat steps 1 and 2 to identify google.com.ua IP
+      </p>
+    </article>
+  </section>
+</body>
+</html>

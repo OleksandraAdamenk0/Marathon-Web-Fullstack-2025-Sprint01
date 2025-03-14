@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body:not(.example) {
+    background: #f3d250;
+    align-content: center;
+    padding: 20px 60px;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+section{
+    display: grid;
+    gap: 48px;
+}
+
+article {
+    background: #ececec;
+    padding: 32px 12px;
+
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+.protocols article {
+    padding: 32px 12px 16px;
+}
+
+h1:not(.example) {
+    text-align: center;
+    margin-top: 48px;
+}
+
+h2{
+    text-align: center;
+    margin: 32px 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    padding: 12px 0;
+}
+
+.protocols p {
+    padding: 0;
+}
+
+.html pre {
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+
+.css pre {
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+h1.example {
+    font-size: 32px;
+}
+
+table.example {
+    margin: 0 32px;
+}
+
+table.example th{
+    text-align: center;
+}
+
+table.example td {
+    text-align: left;
+}
+
+hr.example {
+    border: none;
+    border-top: 1px solid gray;
+}
+
+hr.example + p{
+    margin: 12px 0;
+}
+
+form.example fieldset {
+    border: none;
+    margin-top: 16px;
+}
+
+form.example label[for="name"] {
+    font-weight: bold;
+}
+
+form.example input[type="radio"] {
+    margin-right: 8px;
+}
+
+form.example p {
+    padding: 0;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+button.example {
+    width: fit-content;
+    padding: 4px;
+}
+
+div.background {
+    padding: 16px 0;
+    background: red;
+}
+
+.opacity div {
+    background-color: green ;
+    width: 32px;
+    height: 16px;
+}
+
+.opacity div:nth-child(1) {
+    opacity: 1;
+}
+
+.opacity div:nth-child(2) {
+    opacity: 0.8;
+}
+
+.opacity div:nth-child(3) {
+    opacity: 0.5;
+}
+
+.opacity div:nth-child(4) {
+    opacity: 0.3;
+}
+
+.line-height:nth-child(1) {
+    line-height: 1.5;
+}
+
+.line-height:nth-child(2) {
+    line-height: 1;
+}
+
+.text-transform {
+    text-transform: capitalize;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.border {
+    border-bottom: solid 2px red;
+    width: 32px;
+    height: 32px;
+    background-color: lightgray;
+}
+
+.font-size {
+    font-size: 24px;
+}
+
+@media (min-width : 320px) {
+
+}
+
+@media (min-width : 768px) {
+    section.html,
+    section.css {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px
+    }
+
+}
+
+@media (min-width : 1024px) {
+    section.html,
+    section.css {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px
+    }
+
+    section.protocols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.protocols article:last-child {
+        grid-template-rows: min-content;
+    }
+}
